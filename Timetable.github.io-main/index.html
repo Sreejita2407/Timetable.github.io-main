@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title data-translator-key="timetable">Timetable</title>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<link rel="stylesheet" type="text/css" href="general.css"/>
+		<link rel="stylesheet" type="text/css" href="fontello/css/fontello.css"/>
+		<script src="configuration.js"></script>
+		<script src="translator.js"></script>
+		<script src="script.js"></script>
+
+		<link rel="manifest" href="manifest.json"/>
+		<meta name="theme-color" content="#FFFFFF"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Stundenplan">
+		<link rel="apple-touch-icon" href="icon.png">
+
+		<style>
+			/* CSS for the button */
+			#loginButton {
+				background: linear-gradient(to right, #ffffff, #007bff);
+				border: none;
+				color: white;
+				padding: 10px 20px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+	
+			#loginButton:hover {
+				background: linear-gradient(to right, #007bff, #ffffff);
+			}
+			
+			/* Additional styles - just for demonstration purposes */
+			#collapsing_header {
+				text-align: center;
+				margin-top: 50px;
+			}
+	
+			h1 {
+				font-size: 36px;
+				margin-bottom: 20px;
+			}
+		</style>
+	</head>
+
+
+
+	<body>
+	    <div id="collapsing_header">
+		    <h1 data-translator-key="timetable">Timetable</h1>
+			
+			<a href="login.html"><button id="loginButton">Login</button></a>
+		    <a href="settings.html"><button class="icon-settings"></button></a>
+		</div>
+
+		<header></header>
+
+		<div id="timetable">
+			<div id="periods_container"></div>
+
+			<div id="subjects_container"></div>
+		</div>
+	</body>
+</html>
